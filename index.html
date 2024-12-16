@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aarthi's Resume</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ece9e6, #ffffff);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        
+        /* Navigation Bar */
+        nav {
+            background-color: #0056b3;
+            color: #fff;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav ul li a:hover {
+            background: #003f88;
+        }
+
+        /* Header Section */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            color: #0056b3;
+        }
+        .header p {
+            font-size: 1.2em;
+            margin: 5px 0;
+            color: #444;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            font-size: 1.8em;
+            color: #0056b3;
+            border-bottom: 3px solid #0056b3;
+            display: inline-block;
+            margin-bottom: 15px;
+            animation: slideIn 1s ease-out;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .section ul li strong {
+            display: block;
+            color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideIn {
+            from {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <span>Aarthi's Resume</span>
+        <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Aarthi</h1>
+            <p>Register Number: E22CS6801</p>
+            <p>Government Art's College (Autonomous), Kumbakonam</p>
+            <p>B.Sc Computer Science | Final Year Student</p>
+        </div>
+        
+        <!-- Profile Section -->
+        <div class="section" id="profile">
+            <h2>Profile</h2>
+            <p>A passionate and hardworking final-year Computer Science student, eager to leverage academic knowledge and skills in real-world applications. Adept at problem-solving, coding, and continuously learning emerging technologies.</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section" id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> Python, Java, C++</li>
+                <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li>
+                <li><strong>Database Management:</strong> MySQL, SQLite</li>
+                <li><strong>Soft Skills:</strong> Teamwork, Leadership, Time Management</li>
+            </ul>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section" id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>B.Sc Computer Science</strong><br>
+                    Government Art's College (Autonomous), Kumbakonam<br>
+                    2021 - Present | Final Year
+                </li>
+                <li>
+                    <strong>Higher Secondary Education</strong><br>
+                    School Name, City<br>
+                    Completed in 2021
+                </li>
+            </ul>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section" id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>Portfolio Website</strong><br>
+                    Designed and developed a personal portfolio using HTML, CSS, and JavaScript.
+                </li>
+                <li>
+                    <strong>Library Management System</strong><br>
+                    Created a system using Python and MySQL for efficient library operations.
+                </li>
+                <li>
+                    <strong>Weather App</strong><br>
+                    Developed a real-time weather forecasting app using JavaScript and OpenWeather API.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Hobbies Section -->
+        <div class="section" id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Exploring new programming techniques</li>
+                <li>Reading technology blogs</li>
+                <li>Participating in hackathons</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        © 2024 Aarthi. All rights reserved.
+    </footer>
+
+</body>
+</html>
